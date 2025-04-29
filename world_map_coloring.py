@@ -12,23 +12,32 @@ ORANGE_COUNTRIES = ['France', 'Germany', 'United Kingdom', 'Netherlands', 'Switz
 BLACK_COUNTRIES = ['China', 'Russia', 'Belarus', 'Iran', 'North Korea']
 BLUE_COUNTRIES = [
     # America
-    'Venezuela', 'Guyana', 'Suriname', 'Dominican Republic', 'Haiti', 'Trinidad and Tobago', 'Argentina', 'Uruguay', 'Brazil',
+    'Venezuela', 'Guyana', 'Suriname', 'Dominican Republic', 'Haiti', 'Trinidad and Tobago',
+    'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 'Grenada', 'Barbados',
+    'Argentina', 'Uruguay', 'Brazil', 'Paraguay', 'Bolivia', 'Bahamas', 'Bermuda',
     
     # Europe
-    'Portugal', 'Spain', 'Italy', 'Belgium', 'Luxembourg', 'Norway', 'Sweden', 'Denmark', 'Finland',
-    'Poland', 'Czechia', 'Slovakia', 'Hungary', 'Croatia', 'Slovenia', 'Serbia', 'Bosnia and Herzegovina',
-    'Montenegro', 'North Macedonia', 'Albania', 'Bulgaria', 'Romania', 'Estonia', 'Latvia', 'Lithuania', 'Ukraine', 'Moldova',
+    'Ireland', 'Portugal', 'Spain', 'Italy', 'Belgium', 'Luxembourg', 'Norway', 'Sweden', 'Denmark',
+    'Finland', 'Poland', 'Czechia', 'Slovakia', 'Hungary', 'Croatia', 'Slovenia', 'Serbia', 
+    'Bosnia and Herzegovina', 'Montenegro', 'North Macedonia', 'Albania', 'Greece', 'Bulgaria',
+    'Romania', 'Ukraine', 'Moldova', 'Estonia', 'Latvia', 'Lithuania', 'Malta', 'Cyprus',
+    'Iceland', 'Andorra', 'San Marino', 'Monaco', 'Liechtenstein',
     
     # Africa
-    'Morocco', 'Algeria', 'Tunisia', 'Libya', 'Egypt', 'Senegal', 'Gambia', 'Guinea', 'Guinea-Bissau', 'Sierra Leone',
-    'Liberia', 'Ivory Coast', 'Ghana', 'Togo', 'Benin', 'Burkina Faso', 'Mali', 'Niger', 'Nigeria',
-    'Cameroon', 'Chad', 'Central African Republic', 'Sudan', 'South Sudan', 'Ethiopia', 'Somalia', 'Djibouti',
-    'Uganda', 'Kenya', 'Tanzania', 'Rwanda', 'Burundi', 'Angola', 'Zambia', 'Malawi', 'Zimbabwe',
-    'Mozambique', 'Botswana', 'Namibia', 'South Africa', 'Lesotho', 'Eswatini',
+      'Mauritania', 'Western Sahara', 'Morocco', 'Algeria', 'Tunisia', 'Libya', 'Egypt',
+    'Mali', 'Senegal', 'Gambia', 'Guinea', 'Guinea-Bissau', 'Sierra Leone', 'Liberia',
+    'Ivory Coast', 'Ghana', 'Togo', 'Benin', 'Burkina Faso', 'Niger', 'Nigeria',
+    'Chad', 'Cameroon', 'Central African Republic', 'South Sudan', 'Sudan',
+    'Democratic Republic of the Congo', 'Republic of the Congo', 'Gabon', 'Equatorial Guinea',
+    'Uganda', 'Kenya', 'Tanzania', 'Rwanda', 'Burundi', 'Malawi', 'Zambia', 'Zimbabwe',
+    'Angola', 'Namibia', 'Botswana', 'South Africa', 'Lesotho', 'Eswatini', 'Madagascar',
+    'Comoros', 'Seychelles', 'Mauritius',
     
     # Middle-East / West-Asia
-    'Turkey', 'Cyprus', 'Israel', 'Palestine', 'Jordan', 'Lebanon', 'Syria', 'Iraq', 'Saudi Arabia', 'Kuwait',
-    'Bahrain', 'Qatar', 'United Arab Emirates', 'Oman', 'Azerbaijan', 'Georgia', 'Armenia'
+    'Turkey', 'Cyprus', 'Israel', 'Palestine', 'Jordan', 'Lebanon', 'Syria', 'Iraq',
+    'Saudi Arabia', 'Kuwait', 'Bahrain', 'Qatar', 'United Arab Emirates', 'Oman',
+    'Armenia', 'Azerbaijan', 'Georgia'
+
 ]
 
 
