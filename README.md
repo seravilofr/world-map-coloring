@@ -11,31 +11,57 @@ This project generates a custom world map where countries are colored based on s
 
 ---
 
-## 📷 Project Preview
+## 📂 Project Structure
 
-![World Map Preview](colored_world_map.png)
-
----
-
-## 🚀 How to use
-
-1. Open the [`world_map_coloring.ipynb`](world_map_coloring.ipynb) notebook.
-2. Run all cells in **Google Colab** (or another Jupyter environment).
-3. The colored world map will be generated and saved as `colored_world_map.png`.
-
-> 🛠️ Requirements (`pip install geopandas matplotlib`) are installed automatically if using Colab.
+```
+world-map-coloring/
+├── world_map_coloring.py
+├── colored_world_map.png (generated after running the script)
+└── README.md
+```
 
 ---
 
-## 📥 Download
+## 🚀 How to Run
 
-The generated image will be saved locally as `colored_world_map.png`.
+1. Make sure you have Python 3.8+ installed.
+2. Install the required libraries:
+
+```bash
+pip install geopandas matplotlib
+```
+
+3. Run the script:
+
+```bash
+python world_map_coloring.py
+```
+
+4. The map will be saved as `colored_world_map.png` in the project folder.
+
+---
+
+## 📥 Output Preview
+
+After running the script, you will obtain a world map colored as specified.
+
+> Note: The generated file is named `colored_world_map.png`.
+
+---
+
+## 🛠 Requirements
+
+- [GeoPandas](https://geopandas.org/)
+- [Matplotlib](https://matplotlib.org/)
+
+You can install them easily using:
+
+```bash
+pip install geopandas matplotlib
+```
 
 ---
 
 ## 📜 License
 
-This project is open-source and free to use.  
-Feel free to clone, modify, and share it!
-
----
+This project is open-source and free to use.
