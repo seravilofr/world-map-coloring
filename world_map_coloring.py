@@ -11,12 +11,26 @@ WORLD_MAP_URL = 'https://raw.githubusercontent.com/nvkelso/natural-earth-vector/
 ORANGE_COUNTRIES = ['France', 'Germany', 'United Kingdom', 'Netherlands', 'Switzerland', 'Austria']
 BLACK_COUNTRIES = ['China', 'Russia', 'Belarus', 'Iran', 'North Korea']
 BLUE_COUNTRIES = [
-    'Cape Verde', 'Greenland', 'Brazil', 'Argentina', 'Uruguay', 'Chile', 'Iceland', 'Portugal', 'Spain', 'France',
-    'Germany', 'United Kingdom', 'Netherlands', 'Switzerland', 'Austria', 'Italy', 'Poland', 'Czechia', 'Slovakia',
-    'Hungary', 'Belgium', 'Norway', 'Sweden', 'Denmark', 'Finland', 'Greece', 'Turkey', 'Israel', 'Saudi Arabia',
-    'South Africa', 'Ukraine', 'Romania', 'Bulgaria', 'Estonia', 'Latvia', 'Lithuania', 'Morocco', 'Algeria',
-    'Tunisia', 'Libya', 'Egypt', 'Jordan', 'Syria', 'Lebanon', 'Ethiopia', 'Kenya', 'Somalia'
+    # America
+    'Venezuela', 'Guyana', 'Suriname', 'Dominican Republic', 'Haiti', 'Trinidad and Tobago', 'Argentina', 'Uruguay', 'Brazil',
+    
+    # Europe
+    'Portugal', 'Spain', 'Italy', 'Belgium', 'Luxembourg', 'Norway', 'Sweden', 'Denmark', 'Finland',
+    'Poland', 'Czechia', 'Slovakia', 'Hungary', 'Croatia', 'Slovenia', 'Serbia', 'Bosnia and Herzegovina',
+    'Montenegro', 'North Macedonia', 'Albania', 'Bulgaria', 'Romania', 'Estonia', 'Latvia', 'Lithuania', 'Ukraine', 'Moldova',
+    
+    # Africa
+    'Morocco', 'Algeria', 'Tunisia', 'Libya', 'Egypt', 'Senegal', 'Gambia', 'Guinea', 'Guinea-Bissau', 'Sierra Leone',
+    'Liberia', 'Ivory Coast', 'Ghana', 'Togo', 'Benin', 'Burkina Faso', 'Mali', 'Niger', 'Nigeria',
+    'Cameroon', 'Chad', 'Central African Republic', 'Sudan', 'South Sudan', 'Ethiopia', 'Somalia', 'Djibouti',
+    'Uganda', 'Kenya', 'Tanzania', 'Rwanda', 'Burundi', 'Angola', 'Zambia', 'Malawi', 'Zimbabwe',
+    'Mozambique', 'Botswana', 'Namibia', 'South Africa', 'Lesotho', 'Eswatini',
+    
+    # Middle-East / West-Asia
+    'Turkey', 'Cyprus', 'Israel', 'Palestine', 'Jordan', 'Lebanon', 'Syria', 'Iraq', 'Saudi Arabia', 'Kuwait',
+    'Bahrain', 'Qatar', 'United Arab Emirates', 'Oman', 'Azerbaijan', 'Georgia', 'Armenia'
 ]
+
 
 def get_color(country_name):
     if country_name in ORANGE_COUNTRIES:
