@@ -8,13 +8,13 @@ import pycountry
 import pycountry_convert
 from datetime import datetime, timezone
 
+# ───────────────────────────── 1. Static definitions
 WORLD_MAP_URL = (
     "https://raw.githubusercontent.com/nvkelso/"
     "natural-earth-vector/master/geojson/"
     "ne_110m_admin_0_countries.geojson"
 )
 
-# ───────────────────────────── 1. Static definitions
 ORANGE_COUNTRY_NAMES = [
     "France", "Germany", "United Kingdom",
     "Netherlands", "Switzerland", "Austria",
@@ -24,6 +24,12 @@ BLACK_COUNTRY_NAMES = [
     "China", "Russia", "Belarus",
     "Iran", "North Korea",
 ]
+
+# Manual corrections for countries missing timezone info
+manual_timezones = {
+    'SS': 'Africa/Juba',      # South Sudan
+    'ER': 'Africa/Asmara',    # Eritrea
+}
 
 def to_iso3(name: str) -> str:
     """Return ISO-3 code from a common country name."""
@@ -40,6 +46,8 @@ BLACK_ALPHA3  = {to_iso3(name) for name in BLACK_COUNTRY_NAMES}
 def primary_offset(alpha2: str, now_utc: datetime) -> float | None:
     """Return current UTC offset (in hours) for a country's primary timezone."""
     tz_list = pytz.country_timezones.get(alpha2)
+    if not tz_list and alpha2 in manual_timezones:
+        tz_list = [manual_timezones[alpha2]]
     if not tz_list:
         return None
     tz = pytz.timezone(tz_list[0])
@@ -80,7 +88,7 @@ def color_from_iso3(iso3: str) -> str:
 def main() -> None:
     world = gpd.read_file(WORLD_MAP_URL)
 
-    # Color by iso_a3 code
+    # Color by ADM0_A3 code
     world["color"] = world["ADM0_A3"].str.upper().apply(color_from_iso3)
 
     fig, ax = plt.subplots(figsize=(24, 12))
