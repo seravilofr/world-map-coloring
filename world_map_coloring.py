@@ -1,5 +1,5 @@
 # world_map_coloring.py
-# 🌍 World Map Coloring Script – ±4 h from France with individual legend borders
+# 🌍 World Map Coloring Script – ±4 h from France with enlarged legend text
 
 import geopandas as gpd
 import matplotlib.pyplot as plt
@@ -38,8 +38,8 @@ def to_iso3(name: str) -> str:
     except LookupError:
         return pycountry.countries.search_fuzzy(name)[0].alpha_3
 
-ORANGE_ALPHA3 = { to_iso3(n) for n in ORANGE_COUNTRY_NAMES }
-BLACK_ALPHA3  = { to_iso3(n) for n in BLACK_COUNTRY_NAMES }
+ORANGE_ALPHA3 = {to_iso3(n) for n in ORANGE_COUNTRY_NAMES}
+BLACK_ALPHA3  = {to_iso3(n) for n in BLACK_COUNTRY_NAMES}
 
 # ───────────────────────────── 3. Helper functions
 def primary_offset(alpha2: str, now_utc: datetime) -> float | None:
@@ -92,7 +92,7 @@ def main() -> None:
     world.boundary.plot(ax=ax, linewidth=0.6, color="grey")
     world.plot(ax=ax, color=world["color"], edgecolor="grey", linewidth=0.4)
 
-    # Legend with individual borders on each patch and a black frame
+    # Legend with individual borders and larger font size
     orange_patch = mpatches.Patch(
         facecolor="orange", edgecolor="black", linewidth=1,
         label="EPEX offices"
@@ -114,7 +114,8 @@ def main() -> None:
         loc="lower left",
         frameon=True,
         facecolor="white",
-        edgecolor="black"
+        edgecolor="black",
+        fontsize=14    # increase legend text size
     )
     legend.get_frame().set_linewidth(1)
 
